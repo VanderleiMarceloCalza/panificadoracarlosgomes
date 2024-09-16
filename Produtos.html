@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #5e75e9;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #5e75e9;
+            color: white;
+            text-align: center;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #5e75e9;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #5e75e9 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #5e75e9;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Panificadora Carlos Gomes</h1>
+        <h2 style="color: white; text-align: center;">Nossos Produtos</h2>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Padaria</a></li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="ProjetoSocial.html">Projeto Social</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="balcão.jpeg" width="90%">
+            <div class="infos">
+                <p><strong>Produção</strong> propria</p>
+                <p>
+                    <strong>Desde</strong>
+                    15/02/2003
+                </p>
+                <p><strong>21 anos servindo você</strong></p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class=" principal">
+            <h1>
+                Produtos
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="broas.jpeg">
+
+                    <div class="">
+                        <h2>Broa de fubá</h2>
+                        <p>Feita diariamente</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="pizza.jpeg">
+
+                    <div class="">
+                        <h2>Pizza</h2>
+                        <p>Pizza semi pronta</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="casado.jpeg">
+
+                    <div class="">
+                        <h2>Casados</h2>
+                        <p>Casados recheados</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="croisants.jpeg">
+
+                    <div class="">
+                        <h2>croisants </h2>
+                        <p>Croisants salgados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="croisan.jpeg">
+
+                    <div class="">
+                        <h2>Croisants</h2>
+                        <p>Croisants doces</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="donuts.jpeg">
+
+                    <div class="">
+                        <h2>Donuts</h2>
+                        <p>Donuts recheados</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="donut.jpeg">
+
+                    <div class="">
+                        <h2>donuts</h2>
+                        <p>donuts cobertura</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="croisant.jpeg">
+
+                    <div class="">
+                        <h2>croisants </h2>
+                        <p>Croisants chocolate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido por iniciante em programação</h1>
+        <H2>Desculpe a simplicidade do site no momento espero poder melhora-lo muito com meu aprendizado na faculdade.</H2>
+    </footer>
+    </footer>
+    </div>
+</body>
+
+</html>

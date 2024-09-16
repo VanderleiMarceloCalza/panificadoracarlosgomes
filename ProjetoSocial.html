@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Social</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_pao {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        header {
+            background-color: #5e75e9;
+            
+        }
+
+        ul {
+            list-style-type: none;
+
+            color: #5e75e9;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #5e75e9 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #5e75e9;
+            color: white;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #5e75e9;
+            color: white;
+            text-align: center;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_pao {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+
+            .principal {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Panificadora Carlos Gomes</h1>
+        <h2 style="color: white; text-align: center;">Projeto Social</h2>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Padaria</a></li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="ProjetoSocial.html">Projeto Social</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_pão">
+            <img src="pao.png">
+            <div class="infos">
+                <p><strong>Estamos trabalhando este projeto para que haja ao menos um pouquinho da diminuição da desigualdade social.</strong></p>
+                <p><strong>E você cliente amigo pode nos ajudar.</strong></p>
+                <p><strong>Um pouquinho de quem tem vai ser de grande ajuda pra quem não tem quase nada.</strong></p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Troco Solidário
+            </h1>
+            <p>Neste projeto nós visamos ajudar as famílias carentes da nossa comunidade.</p>
+            <p>Nós aqui estamos a mais de 20 anos neste comércio e vemos a dificuldade que algumas famílias encontram em comprar o pãozinho de todos os dias, as vezes notamos que ficam alguns dias sem nem mesmo comprar o essencial.</p>
+            <p>E como diz a música uma andorinha sozinha não faz verão, apenas com nossos recursos não conseguiremos ajudar a todos, então ai entra a solidariedade dos nossos clientes</p>
+            <p>Se cada cliente ajudar com um trocadinho uma moedinha que seja no final do dia com certeza teremos alguma quantia em dinheiro que nosso comércio tranformará em pães e leite usando o preço de custo dos produtos e destinaremos as famílias que estarão cadastradas conosco depois de serem avaliadas</p>
+            <p>Se vocês clientes aqui da nossa comunidade conhecerem famílias que estão em dificuldades por favor preencha o formulário abaixo</p>
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="msg">Digite sua Mensagem:</label></th>
+                        <td><textarea type="msg" rows="5" cols="40">Digite sua mensagem</textarea>></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><button>Enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido por iniciante em programação</h1>
+        <H2>Desculpe a simplicidade do site no momento espero poder melhora-lo muito, com meu aprendizado na faculdade.</H2>
+    </footer>
+    </div>
+</body>
+
+</html>
